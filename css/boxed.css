@@ -1,0 +1,62 @@
+/* Boxed Layout */
+#wrapper  {
+	background-color:rgba(255,255,255,0.95) !important;
+}
+@media (min-width:768px) {
+	.body-boxed.light {
+		background:url('../images/pattern-light.png') repeat;
+	}
+	.body-boxed.dark {
+		background:url('../images/pattern-dark.png') repeat;
+	}
+	.body-boxed.image {
+		background-image: url('../images/demo/boxed-img.jpg');
+	    background-repeat: no-repeat;
+	    background-position: 50% 0;
+	    background-size: cover;
+	    background-attachment: fixed;
+		-webkit-backface-visibility: hidden !important;
+	}
+
+	#wrapper {
+		margin:auto;
+		width:768px;
+		box-shadow:0 0 40px rgba(0, 0, 0, 0.3);
+	}
+}
+
+@media (min-width:992px) {
+	#wrapper { width:992px; }
+	.menu-fixed .main-header,
+	.header-transparent .main-header {
+        width:992px; 
+        left:auto;
+        margin:0 auto;
+    }
+    .vertical-menu-fixed #wrapper {
+    	width:calc(90% - 350px);
+    	margin-left: 350px;
+    }
+    .vertical-menu-fixed.body-boxed .content-fixed {
+		padding-left:0;
+	}
+	.vertical-menu-fixed.body-boxed .content-fixed.right {
+		padding-left:0;
+		padding-right:0;
+	}
+	.vertical-menu-fixed.body-boxed .content-fixed .container {
+		width:90%;
+	}
+
+}
+@media (min-width:1200px) {
+	#wrapper,
+	.menu-fixed .main-header,
+	.header-transparent .main-header  {
+		width:1200px;
+	}
+	.vertical-menu-fixed #wrapper {
+    	width:calc(85% - 350px);
+    	margin-left: 350px;
+    }
+}

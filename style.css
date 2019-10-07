@@ -1,0 +1,112 @@
+/*   
+Theme Name: Voip Wp Theme
+Theme URI: http://voip.asnet.am/
+Description: Voip IIAP -- WordPress Theme template -- WordPress v4.3
+Author: E. Kirakosyan
+Author URI: 
+Version: 1
+*/
+
+.contact-map-overlay {
+    position: relative;
+    padding: 150px 0;
+    color: #d3d5d8;
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    .contact-map-overlay {
+        padding: 80px 0;
+    }
+}
+
+.contact-map-overlay .bg-overlay {
+    background: #0F151B;
+    opacity: 0.85;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.contact-map-overlay .map-fullscreen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#contact-see-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: inherit;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-right: 100px solid transparent;
+    border-top: 100px solid rgb(252, 200, 19);
+    z-index: 99;
+}
+
+#contact-see-map .icon {
+    position: absolute;
+    top: -78px;
+    left: 12px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.contact-map-overlay.map-on .bg-overlay {
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.contact-map-overlay.map-on .map-fullscreen {
+    z-index: 9;
+}
+
+.contact-map-overlay .box-services-6 p,
+.contact-map-overlay.page-contact .box-services-2 .box-left .icon-4 {
+    color: inherit;
+}
+
+.contact-map-overlay .box-services-6 {
+    padding: 20px;
+    border: 1px solid #dadada;
+}
+
+.contact-map-overlay .form input[type],
+.contact-map-overlay .form textarea {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: inherit;
+    margin-bottom: 20px;
+}
+
+.contact-map-overlay .form input[type]:hover,
+.contact-map-overlay .form textarea:hover,
+.contact-map-overlay .form input[type]:focus,
+.contact-map-overlay .form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-map-overlay .form::-webkit-input-placeholder {
+    color: inherit;
+    letter-spacing: 0.5px;
+}
+
+.contact-map-overlay .form::-moz-placeholder {
+    color: inherit;
+    letter-spacing: 0.5px;
+}
+
+.contact-map-overlay .form:-ms-input-placeholder {
+    color: inherit;
+    letter-spacing: 0.5px;
+}
+.contact-header{
+    height: 86px;
+    background: url(images/map.png) 0 0 no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 50%;
+}
